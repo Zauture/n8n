@@ -1,0 +1,8 @@
+FROM n8nio/n8n
+
+ENV N8N_BASIC_AUTH_ACTIVE=true
+ENV N8N_BASIC_AUTH_USER=ginoadmin
+ENV N8N_BASIC_AUTH_PASSWORD=securepass123
+
+EXPOSE 5678
+CMD ["n8n", "start"]
